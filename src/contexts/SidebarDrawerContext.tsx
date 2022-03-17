@@ -8,7 +8,7 @@ interface SiderbarDrawerProviderProps {
 
 type SideBarDrawerContextData = UseDisclosureReturn
 
-const SiderbarDrawerContext = createContext({} as UseDisclosureReturn);
+const SiderbarDrawerContext = createContext({} as SideBarDrawerContextData);
 
 export function SiderbarDrawerProvider({ children }: SiderbarDrawerProviderProps){
     const discloure = useDisclosure()
